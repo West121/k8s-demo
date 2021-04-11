@@ -7,4 +7,4 @@ COPY ${JAR_FILE} k8s-demo.jar
 
 EXPOSE 8888
 
-CMD ["java", "$JAVA_OPTS", "-jar", "/build/k8s-demo.jar"]
+CMD ["java", "${JAVA_OPTS}", "-jar", "/build/k8s-demo.jar"]
